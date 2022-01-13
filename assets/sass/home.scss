@@ -239,7 +239,7 @@ html {
                             .btn {
                                 position: relative;
 
-                                &.btn-primary {
+                                &.btn-custom {
                                     background-color: #B4882D;
                                     border: none;
                                     border-radius: 0;
@@ -248,32 +248,19 @@ html {
                                     font-size: 14px;
                                     font-weight: 500;
                                     font-family: 'Yaldevi', sans-serif;
-                                    z-index: 10;
-                                }
-
-                                &.btn-primary:before {
-                                    position: absolute;
-                                    color: #FFFFFF;
-                                    background-color: #2A3280;
-                                    top: 0;
-                                    left: 0;
-                                    right: 0;
-                                    bottom: 0;
-                                    content: '';
-                                    width: 0;
+                                    box-shadow: inset 0 0 0 0 #232A64;
                                     transition: 1s all ease;
 
+                                    &:hover {
+                                        box-shadow: inset 300px 0 0 0 #232A64;
+                                        color: #FFFFFF;
+                                        transition: 1s all ease;
+                                    }
+                                    
                                 }
 
-                                &.btn-primary:hover:before {
-                                    width: 100%;
-                                    color: #FFFFFF;
-                                }
                             }
 
-                            .btn {}
-
-                            .btn {}
                         }
                     }
                 }
@@ -980,7 +967,8 @@ html {
                                     
                                     img {
                                        
-                                        // object-fit: cover;
+                                         object-fit: cover;
+                                        height: auto;
                                        
                                     }
                                 }
